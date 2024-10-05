@@ -7,6 +7,18 @@ body {
     color: #183B4B;
 }
 
+h1 {
+    margin-bottom: 0px; 
+    font-size: 50px; 
+    font-weight: 800;
+}
+
+h3 {
+    margin-top: 3px; 
+    margin-bottom: 32px; 
+    font-weight: 300;
+}
+
 hr.custom-hr {
     border: none; /* Remove the default border */
     height: 1px; /* Set the desired thickness */
@@ -67,7 +79,7 @@ nav a { /* Nabvar text */
 
 .card-img {
     width: 100%; /* Set width to 100% of the parent container */
-    aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:2 */
+    aspect-ratio: 2 / 1; /* Set the aspect ratio to 1:2 */
     overflow: hidden; /* Hide any overflow */
     position: relative;
     margin: 0px; /* Add some margin between images */
@@ -123,4 +135,58 @@ nav a { /* Nabvar text */
     margin-top: 15px;
     margin-bottom: 12px;
     text-align: justify;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    section h2 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    nav a {
+        font-size: small;
+    }
+
+    .title-description {
+        font-size: small;
+    }
+
+    section {    
+        margin-top: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .card {
+        height: 355px;
+    }
+
+    .card-content .title {
+        font-size: large;
+        font-weight: 800;
+    }
+
+    .card-content p {
+        font-size: small;
+    }
+
+    .p-see-more {
+        margin-top: 0px;
+        margin-right: 20px;
+        text-align: end;
+        font-size: small;
+    }
 }
