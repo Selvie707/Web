@@ -1,0 +1,51 @@
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu .brand {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a {
+    display: block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9;
+}
+
+.menu-toggle {
+    /* Jika Normal Akan Menjadi None /
+    / display: flex; /
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    / background-color: black; */
+    position: relative;
+    z-index: 999;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -7px;
+    top: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}

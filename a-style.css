@@ -1,0 +1,126 @@
+body {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #183B4B;
+}
+
+hr.custom-hr {
+    border: none; /* Remove the default border */
+    height: 1px; /* Set the desired thickness */
+    background-color: #183B4B; /* Set the desired color */
+    margin: 20px 0; /* Optional: Adjust the margin around the hr element */
+}
+
+section {    
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+section h2 {
+    margin-bottom: 5px;
+    font-size: xx-large;
+}
+
+.title-description {
+    margin-top: 0px;
+}
+
+nav { /* bbl brand in navbar */
+    margin-right: 2rem ;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: #5b98ba;
+}
+nav a { /* Nabvar text */
+    font-family: "Inter", sans-serif;
+    color: #183B4B;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0.8rem;
+    font-size: medium;
+}
+
+/* Container with a fixed aspect ratio of 1:2 (width:height) */
+.image-container {
+    width: 100%; /* Set width to 100% of the parent container */
+    aspect-ratio: 22 / 10; /* Set the aspect ratio to 1:2 */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
+    margin: 10px 0; /* Add some margin between images */
+}
+  
+/* Style the images to fit within the container */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+    left: 0;
+}
+
+.card-img {
+    width: 100%; /* Set width to 100% of the parent container */
+    aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:2 */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
+    margin: 0px; /* Add some margin between images */
+}
+  
+/* Style the images to fit within the container */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute; /* Position the image absolutely within the container */
+    object-position: left;
+    top: 0;
+    left: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.card {
+    width: 325px;
+    background-color: #5b98ba;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card-content {
+    padding: 16px;
+    text-align: start;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-top: 8px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.card-content p {
+    margin-top: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.card-content .description {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
+}

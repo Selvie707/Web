@@ -1,0 +1,488 @@
+/* <section class="staff" id="section-4">
+            <div class="huge-text" style="margin-top: 80px; text-align: center;">ARTICLE</div>
+            
+            <div class="container">
+                <div class="card_container">
+                    <article class="card_article">
+                        <img src="aboutus.png" alt="image" class="card_image">
+                        
+                        <div class="card_data">
+                            <span class="card_description">Article A Description</span>
+                            <h2 class="card_title">A</h2>
+                            <a href="#" class="card_button">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card_article">
+                        <img src="aboutus.png" alt="image" class="card_image">
+                        
+                        <div class="card_data">
+                            <span class="card_description">Article B Description</span>
+                            <h2 class="card_title">B</h2>
+                            <a href="#" class="card_button">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card_article">
+                        <img src="aboutus.png" alt="image" class="card_image">
+                        
+                        <div class="card_data">
+                            <span class="card_description">Article C Description</span>
+                            <h2 class="card_title">C</h2>
+                            <a href="#" class="card_button">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        .container {
+            display: grid;
+            place-items: center;
+            margin-inline: 1.5rem;
+            padding-block: 5rem;
+        }
+        
+        .card_container {
+            display: grid;
+            row-gap: 3.5rem;
+        }
+        
+        .card-article {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card_img {
+            width: 328px;
+            border-radius: 1.5rem;
+        }
+        
+        .card_image {    
+            max-width: 20%;
+            height: auto;
+            display: block;
+        }
+        
+        .card_data {
+            width: 280px;
+            background-color: var(_--container-color);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+            border-radius: 1rem;
+            position: absolute;
+            bottom: -9rem;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            opacity: 0;
+            transition: opacity 1s 1s;
+        }
+        
+        .card_description {
+            display: block;
+            font-size: var(--small-font-size);
+            margin-bottom: .25rem;
+        }
+        
+        .card_title {
+            font-size: var(--h2-font-size);
+            font-weight: 500;
+            color: var(--title-color);
+            margin-bottom: .75rem;
+        }
+        
+        .card_button {
+            text-decoration: none;
+            font-size: var(--small-font-size);
+            font-weight: 500;
+            color: var(--first-color);
+        }
+        
+        .card_button:hover {
+        text-decoration: underline;
+        }
+        
+        .card_article:hover .card_data {
+            animation: show-data 1s forwards;
+            opacity: 1;
+            transition: opacity .3s;
+        }
+        
+        .card_article:hover {
+            animation: remove-overflow 2s forwards;
+        }
+        
+        .card_article:not(:hover) {
+            animation: show-overflow 2s forwards;
+        }
+        
+        .card_article:not(:hover) .card_data {
+            animation: remove-data 1s forwards;
+        }
+        
+        @keyframes show-data {
+            50% {
+                transform: translateY(-10rem);
+            }
+            100% {
+                transform: translateY(-7rem);
+            }
+        }
+        
+        @keyframes remove-overflow {
+            to {
+                overflow: initial;
+            }
+        }
+        
+        @keyframes remove-data {
+            0% {
+                transform: translateY(-7rem);
+            }
+            50% {
+                transform: translateY(-10rem);
+            }
+            100% {
+                transform: translateY(.5rem);
+            }
+        }
+        
+        @keyframes show-overflow {
+            0% {
+                overflow: initial;
+                pointer-events: none;
+            }
+            50% {
+                overflow: hidden;
+            }
+        } */
+
+/* FOOTER -->
+
+<!-- <footer class="footer-distributed">
+<div class="footer-left">
+            <img src="logo.png" style="width: 380px; height: 100px;"><br><br>
+            <p class="footer-company-name">GO FOR IMPROVEMENT NOT PERFECTION</p>
+        </div>
+    
+        <div class="footer-center">
+            <h2 style="margin-left: 20px; color: #183B4B;"><b>SOCIAL MEDIA</b></h2>
+            <div>
+                <i class="fa-brands fa-instagram" style="color: #183B4B;"></i>
+                <p>bukubuku.linda</p>
+            </div>
+    
+            <div>
+                <i class="fa-brands fa-youtube" style="color: #183B4B;"></i>
+                <p>Buku Buku Linda</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin" style="color: #183B4B;"></i>
+                <p>Buku Buku Linda</p>
+            </div>
+        </div>
+        <div class="footer-center">
+            <h2 style="margin-left: 20px; color: #183B4B;"><b>CONTACT US</b></h2>
+            <div>
+                <i class="fa-solid fa-envelope" style="color: #183B4B;"></i>
+                <p>bblians@gmail.com</p>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-phone" style="color: #183B4B;"></i>
+                <p>+62895621654714</p>
+            </div>
+        </div>
+    </footer> -->
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      height: auto;
+    }
+    .profile-card {
+      margin: 20px 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .home-container {
+      flex-direction: column;
+      height: auto;
+    }
+    .profile-card {
+      margin: 10px 0;
+    }
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+/* @media (max-width: 1150px) {
+    html{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 910px) {
+    .container{
+        padding: 5%;
+    }
+    .container-1{
+        margin-bottom: 12rem;
+    }
+    .container-2{
+        margin-bottom: 7rem;
+    }
+    .huge-text{
+        font-size: 4.5em;
+    }
+    .regular-text{
+        font-size: 2.8em;
+    }
+    .regular-text-2{
+        font-size: 2.8rem;
+    }
+    html{
+        font-size: 40%;
+    }
+    .header {
+        padding: 2.2rem;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+    nav {
+        margin-right: 0rem;
+    }
+    nav a {
+        margin-left: 1rem;
+        font-size: 2.2em;
+    }
+    .brand{
+        padding-left: 2.2rem;
+        font-size: 3.4em;
+    }
+    .title-button{
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    .start-button{
+        padding: 0.7em 3em;
+        font-size: 2.5em;
+    }
+    .regist-button{
+        font-size: 3em;
+        padding: 1.8rem 6rem 2.5rem;
+    }
+    .regist-button #learntext{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .regist-button #pointy{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 728px) {
+    .container{
+        padding: 5%;
+    }
+    .container-1{
+        margin-bottom: 12rem;
+    }
+    .container-2{
+        margin-bottom: 7rem;
+    }
+    .huge-text{
+        font-size: 3.8em;
+    }
+    .regular-text{
+        font-size: 2.5em;
+    }
+    .regular-text-2{
+        font-size: 2.5rem;
+    }
+    html{
+        font-size: 40%;
+    }
+    .header {
+        padding: 1.9rem;
+        border-bottom: 1.5px solid rgb(0, 0, 0);
+    }
+    nav{
+        margin-right: 0rem;
+    }
+    nav a {
+        margin-left: 0.6rem;
+        font-size: 1.8em;
+    }
+    .brand{
+        padding-left: 2rem;
+        font-size: 3em;
+    }
+    .title-button{
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    .start-button{
+        padding: 0.7em 3em;
+        font-size: 2em;
+    }
+    .right-bout{
+        margin-top: 10rem;
+    }
+    .left-bout {
+        width: 100%;
+    }
+    .left-bout img{
+        right: 20%;
+        top: 0%;
+        position: relative;
+    }
+    .mission .regular-text-2{
+        margin-left: 5% ;
+        margin-right: 5%;
+    }
+    .regist-button{
+        font-size: 2em;
+        padding: 1.5rem 5rem 2rem;
+    }
+    .regist-button #learntext{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .regist-button #pointy{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .container{
+        padding: 5%;
+    }
+    .container-1{
+        margin-bottom: 10rem;
+    }
+    .container-2{
+        margin-bottom: 6rem;
+    }
+    .huge-text{
+        font-size: 2.7em;
+    }
+    .regular-text{
+        font-size: 1.7em;
+    }
+    .regular-text-2{
+        font-size: 1.7em;
+    }
+    html{
+        font-size: 40%;
+    }
+    .header {
+        padding: 2rem ;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    nav {
+        margin-right: 0rem;
+    }
+    nav a {
+        margin-left: 0.3rem;
+        font-size: 1.25em;
+    }
+    .brand{
+        padding-left: 0.5rem;
+        font-size: 2.2em;
+    }
+    .title-button{
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+    .start-button{
+        padding: 0.7em 2.8em;
+        font-size: 1.3em;
+    }
+    .mission .regular-text-2{
+        margin-left: 5% ;
+        margin-right: 5%;
+    }
+    .regist-button{
+        font-size: 1.4em;
+        padding: 0.3rem 2rem 1rem;
+    }
+    .regist-button #learntext{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .regist-button #pointy{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .container{
+        padding: 4%;
+    }
+    .container-1{
+        margin-bottom: 10rem;
+    }
+    .container-2{
+        margin-bottom: 10%;
+    }
+    .huge-text{
+        font-size: 2.5em;
+    }
+    .regular-text{
+        font-size: 1.65em;
+    }
+    .regular-text-2{
+        font-size: 1.65em;
+    }
+    html{
+        font-size: 40%;
+    }
+    .header {
+        padding: 1.3rem;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    nav {
+        margin-right: 0rem;
+    }
+    nav a {
+        margin-left: 0.3rem;
+        font-size: 1.1em;
+    }
+    .brand{
+        padding-left: 0.5rem;
+        font-size: 2em;
+    }
+    .title-button{
+        margin-top: 12%;
+        margin-left: 0%;
+    }
+    .right-title{
+        margin-top: 1%;
+    }
+    .mission {
+        margin-left: 5% ;
+        margin-right: 5%;
+    }
+    .regist-button{
+        font-size: 1.4em;
+        padding: 0.3rem 2rem 1rem;
+    }
+    .regist-button #learntext{
+        margin-right: 1rem;
+    }
+    .regist-button #pointy{
+        font-size: 2.5rem;
+    }
+}
+*/
